@@ -16,12 +16,35 @@ Vue.use(Router)
 // })
 
 
-export default new Router({
-    routes:[
+export const constantRouterMap = [
         {
             path: '/login',
             name:'login',
             component:Login
-        }
+        },
+        {
+            path: '/authredirect',
+            component: () => import('@/views/login/authredirect'),
+            hidden: true
+          }
     ]
-})
+
+    
+export default new Router({
+    // mode: 'history', // require service support
+    scrollBehavior: () => ({ y: 0 }),
+    routes: constantRouterMap
+  })
+  export const asyncRouterMap = [
+    {
+      path: '/permission',
+      //component: Layout,
+      redirect: '/permission/index',
+      alwaysShow: true, // will always show the root menu
+      meta: {
+        title: 'permission',
+        icon: 'lock',
+        roles: ['admin', 'editor'] // you can set roles in root nav
+      }
+    }
+]
