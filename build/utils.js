@@ -1,4 +1,3 @@
-'use strict'
 const path = require('path')
 const config = require('../config')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
