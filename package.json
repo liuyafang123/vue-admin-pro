@@ -26,6 +26,7 @@
         "admin-template"
     ],
     "dependencies": {
+        "axios": "0.18.0",
         "babel-runtime": "^6.26.0",
         "connect": "3.6.6",
         "nprogress": "0.2.0",
@@ -33,6 +34,7 @@
         "element-ui": "2.4.6",
         "eslint-plugin-react": "^7.11.1",
         "js-cookie": "2.2.0",
+        "mockjs": "1.0.1-beta3",
         "vue": "2.5.17",
         "vuex": "3.0.1",
         "vue-i18n": "7.3.2",

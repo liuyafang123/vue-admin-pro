@@ -10,6 +10,7 @@ export function loginByUsername(username, password) {
     method: 'post',
     data
   })
+
 }
 
 export function logout() {
